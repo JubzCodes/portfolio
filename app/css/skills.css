@@ -80,3 +80,50 @@
 	 max-height: 100vh;
 	 padding: 1em;
 }
+
+.skillbar {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.198);
+  height: 20px;
+  border-radius: 4px;
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  font-size: 13px;
+  color: #fff;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.skillbar-title span {
+  display: block;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  height: 20px;
+  line-height: 20px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.skillbar-bar {
+  height: 20px;
+  width: 0px;
+}
+
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  line-height: 20px;
+  color: rgb(28, 28, 28);
+}
