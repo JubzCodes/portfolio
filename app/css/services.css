@@ -14,6 +14,11 @@
   align-items: center;
 }
 
+.services h1 {
+  color: #1a1a1a;
+}
+
+
 .card-holder {
   display: flex;
   justify-content: center;

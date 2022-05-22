@@ -152,6 +152,14 @@ img {
 
 .button--small {
   padding: .75rem 1rem;
+  color: black;
+  background-color:#a9a9a9;
+  padding-top: 3%
+}
+
+.button--small:hover {
+  color: #fff;
+  background-color:#e1e1e12a
 }
 
 .button--link {
@@ -188,7 +196,12 @@ img {
 
 .portfolio__description {
   margin-bottom: var(--mb-0-75);
+  color: #a9a9a9;
 }
+
+  .portfolio__title {
+    color: #fff;
+  }
 
 .portfolio__button:hover .button__icon {
   transform: translateX(0.25rem);
@@ -366,6 +379,11 @@ img {
 
   .portfolio__description {
     /* padding-right: 20%; */
+      color: #a9a9a9;
+  }
+
+  .portfolio__title {
+    color: #fff;
   }
 
   #portfolio{
