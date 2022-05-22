@@ -1,0 +1,42 @@
+:root {
+  --cardWidth: 240px;
+  --cardHeight: 280px;
+  --cardMargin: 16px;
+}
+
+
+.services {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 100%;
+  align-items: center;
+}
+
+.card-holder {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: var(--cardWidth);
+  height: var(--cardHeight);
+  margin: var(--cardMargin);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #1a1a1a;
+  box-sizing: border-box;
+}
+
+.card h3 {
+  color: white;
+  padding-top: 15%;
+}
+
+.card p {
+  color: #a9a9a9;
+}

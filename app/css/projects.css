@@ -1,0 +1,450 @@
+/*==================== VARIABLES CSS ====================*/
+:root {
+  --header-height: 3rem;
+  /*========== Colors ==========*/
+  /* Change favorite color */
+  --hue-color: 250;
+  /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+  /* HSL color mode */
+  --base-color: 233;
+  --first-color: hsl(var(--base-color), 100%, 60%);
+  --first-color-second: hsl(var(--base-color), 100%, 60%);
+  --first-color-altr: hsl(var(--base-color), 57%, 53%);
+  --first-color-lighter: hsl(var(--base-color), 92%, 85%);
+  --title-color: hsl(var(--base-color), 8%, 15%);
+  --text-color: hsl(var(--base-color), 8%, 45%);
+  --text-color-light: hsl(var(--base-color), 8%, 65%);
+  --input-color: hsl(var(--base-color), 70%, 96%);
+  --body-color: hsl(var(--base-color), 60%, 99%);
+  --container-color: #fff;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  /*========== Font and typography ==========*/
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  /*========== Margenes Bottom ==========*/
+  --mb-0-25: .25rem;
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+  
+}
+
+
+body {
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.section__title, .section__subtitle {
+  text-align: center;
+}
+
+/*==================== LAYOUT ====================*/
+.container {
+  max-width: 90%;
+  /* margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5); */
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+
+
+/*========== BUTTONS ==========*/
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #FFF;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.button__icon {
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: .3s;
+}
+
+.button--white {
+  background-color: #FFF;
+  color: var(--first-color);
+}
+
+.button--white:hover {
+  background-color: #FFF;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.button--small {
+  padding: .75rem 1rem;
+}
+
+.button--link {
+  padding: 0;
+  background-color: transparent;
+  color: var(--first-color);
+}
+
+.button--link:hover {
+  background-color: transparent;
+  color: var(--first-color-alt);
+}
+
+
+/*==================== PORTFOLIO ====================*/
+.portfolio__container {
+  overflow: initial;
+}
+
+.portfolio__data {
+}
+
+
+.portfolio__img {
+  width: 265px;
+  border-radius: .5rem;
+  justify-self: center;
+}
+
+.portfolio__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__description {
+  margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__button:hover .button__icon {
+  transform: translateX(0.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+}
+
+.swiper-portfolio-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev {
+  left: -5rem;
+}
+
+.swiper-button-next {
+  right: -5rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+  outline: none;
+}
+
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+@media screen and (max-width: 350px) {
+  
+  .project__img {
+    width: 200px;
+  }
+
+}
+
+/* For medium devices */
+@media screen and (min-width: 568px) {
+
+  .portfolio__content
+ {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio__img__div {
+    justify-self: end;
+    padding-right: 10%;
+  }
+
+  /* .portfolio__description {
+    padding-right: 20%;
+  } */
+
+  #portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #portfolio h1 {
+    color: #fff;
+  }
+
+}
+
+@media screen and (max-width: 935px) {
+
+  .portfolio__img__div {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
+  .portfolio__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+  #portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+    #portfolio{
+    background-color: #1a1a1a;
+  }
+
+  #portfolio h1 {
+    color: #fff;
+  }
+
+  .swiper-portfolio-icon {
+    font-size: 3.5rem;
+  }
+  .swiper-button-prev {
+    left: -3.5rem;
+    color: #FFF !important;
+  }
+  .swiper-button-next {
+    right: -3.5rem;
+    color: #FFF !important;
+  }
+
+  .swiper-pagination-bullets{
+    color: #FFF !important;
+  }
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: -4.5rem;
+  }
+  .swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    bottom: 0;
+  }
+
+  .swiper-pagination-bullets {
+    padding-top: 3% !important;
+  }  
+}
+
+@media screen and (min-width: 768px) {
+
+  #portfolio{
+    background-color: #1a1a1a;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .section__subtitle {
+    margin-bottom: 4rem;
+  }
+  
+  .portfolio__img {
+    width: 320px;
+  }
+  .portfolio__content {
+    align-items: center;
+  }
+
+
+  .swiper-button-prev {
+  left: -5rem;
+}
+
+.swiper-button-next {
+  right: -5rem;
+}
+
+  .portfolio__img__div {
+    justify-self: end;
+    padding-right: 10%;
+  }
+
+  .portfolio__description {
+    /* padding-right: 20%; */
+  }
+
+  #portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #portfolio h1 {
+    color: #fff;
+  }
+
+    .swiper-button-prev {
+    left: -3.5rem;
+    color: #FFF !important;
+  }
+  .swiper-button-next {
+    right: -3.5rem;
+    color: #FFF !important;
+  }
+
+  .swiper-pagination-bullets{
+    color: #FFF !important;
+  }
+
+  .swiper-pagination-bullets {
+    padding-top: 3% !important;
+  }
+
+
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+
+  .portfolio__img__div {
+    justify-self: end;
+    padding-right: 10%;
+  }
+
+  .portfolio__description {
+    padding-right: 20%;
+  }
+
+  #portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #portfolio h1 {
+    color: #fff;
+  }
+
+  .swiper-portfolio-icon {
+    font-size: 3.5rem;
+  }
+  .swiper-button-prev {
+    left: -3.5rem;
+    color: #FFF !important;
+  }
+  .swiper-button-next {
+    right: -3.5rem;
+    color: #FFF !important;
+  }
+
+  .swiper-pagination-bullets{
+    color: #FFF !important;
+  }
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: -4.5rem;
+  }
+  .swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    bottom: 0;
+  }
+
+  .swiper-pagination-bullets {
+    padding-top: 3% !important;
+  }
+}
