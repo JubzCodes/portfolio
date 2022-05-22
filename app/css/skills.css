@@ -37,13 +37,13 @@
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    background: #a9a9a9;
+    background: white;
     font-weight: bold;
     cursor: pointer;
     /* Icon */
 }
  .tab-label:hover {
-	 background: #757574;
+	 background: #a9a9a9;
 }
  .tab-label::after {
 	 content: "\276F";
@@ -64,7 +64,7 @@
 	 justify-content: flex-end;
 	 padding: 1em;
 	 font-size: 0.75em;
-	 background: #757574;
+	 background: #a9a9a9;
 	 cursor: pointer;
 }
  .tab-close:hover {
