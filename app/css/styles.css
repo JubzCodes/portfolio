@@ -61,6 +61,8 @@
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
+  white-space: nowrap;
+  display: inline;
 }
 
 .nav-menu {
@@ -70,11 +72,14 @@
   text-align: center;
   width: 70%;
   justify-self: end;
+  gap: 4px;
 }
 
 .nav-links {
   color: #fff;
   text-decoration: none;
+  display: inline; 
+   white-space: nowrap;
 }
 
 .nav-links:hover {
