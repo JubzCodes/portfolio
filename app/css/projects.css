@@ -85,6 +85,7 @@ img {
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
   padding: 2rem 0 4rem;
+  padding-top: 5%;
 }
 
 .section__title {
@@ -154,7 +155,6 @@ img {
   padding: .75rem 1rem;
   color: black;
   background-color:#a9a9a9;
-  padding-top: 3%
 }
 
 .button--small:hover {
