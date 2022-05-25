@@ -83,7 +83,7 @@
 }
 
 .nav-links:hover {
-  color: blueviolet;
+  color: #a9a9a9;
   transition: all 0.2s ease-out;
 }
 
