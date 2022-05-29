@@ -27,6 +27,7 @@
 .card {
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   width: var(--cardWidth);
   height: var(--cardHeight);
@@ -44,4 +45,6 @@
 
 .card p {
   color: #a9a9a9;
+  padding-left: 2%;
+  padding-right: 2%;
 }

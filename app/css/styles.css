@@ -96,6 +96,8 @@
   background: #fff;
 }
 
+
+
 @media screen and (max-width: 786px) {
   .nav-container {
     position: relative;
@@ -104,7 +106,7 @@
   .nav-menu {
     display: grid;
     grid-template-columns: auto;
-    background: red;
+    background: #1a1a1a;
     margin: 0;
     width: 100%;
     position: absolute;
@@ -119,7 +121,7 @@
   }
 
   .nav-menu.active {
-    background: grey;
+    background: #a9a9a9;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -130,11 +132,12 @@
     line-height: 60px;
     width: 100%;
     display: table;
+    color: black;
   }
 
   .nav-links:hover {
-    background-color: aqua;
-    color: #fff;
+    background-color: rgb(103, 103, 103);
+    color:white;
     transition: all 0.4s ease-out;
   }
 
@@ -181,12 +184,12 @@
 }
 
 .hero-text {
-  background-color: rgba(0, 0, 0, 0.567);
+  background-color: black;
 }
 
 .hero-text h1 {
   font-size: 3em;
-  color:  #fff;
+  color:  #969696;
 }
 .hero-text p {
   font-size: 2em;
